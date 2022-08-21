@@ -21,5 +21,3 @@ function removeClassActive(e) {
     console.log(this);
   }
 }
-
-//
