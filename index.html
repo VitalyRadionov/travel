@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style/style.css">
+  <script defer src="js/app.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="burgr-menu-container">
+      <div class="window-close-line">
+        <div class="window-close-line__wrapper"></div>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#works">How It Works</a></li>
+        <li class="nav__item"><a href="#plan">Plan Your Trip</a></li>
+        <li class="nav__item"><a href="#destinations">Destinations</a></li>
+        <li class="nav__item"><a href="#stories">Travel Stories</a></li>
+        <li class="nav__item"><a href="#account">Account</a></li>
+        <li class="nav__item"><a href="#socialmedia">Social Media</a></li>
+      </ul>
+    </div>
+    <div class="fading"></div>
+    <!-- <div class="status-bar"></div> -->
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="logo">
+          <img class="logo__img" src="img/Vector.svg" alt="logo">
+          <p class="logo__name">Travel Portal</p>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#works">How It Works</a></li>
+            <li class="nav__item"><a href="#plan">Plan Your Trip</a></li>
+            <li class="nav__item"><a href="#destinations">Destinations</a></li>
+            <li class="nav__item"><a href="#stories">Travel Stories</a></li>
+          </ul>
+        </nav>
+        <nav class="burger-menu"></nav>
+        <div class="frame-1">
+          <button class="button-login">Login</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="works" class="preview">
+        <img class="main-bg-img-top-desktop" src="img/garrett-parker-DlkF4-dbCOU-unsplash-1.jpg" alt="garrett-parker"
+          width="100%">
+        <img class="mobile" src="img/390px/garrett-parker-DlkF4-dbCOU-unsplash-2.jpg" alt="garrett-parker">
+        <div class="preview-wrapper">
+          <div class="preview-container">
+            <h1 class="h1">Explore the beauty of the World</h1>
+            <div class="search-wrapper">
+              <p class="preview-text">Receive personalized recommendations for countries, hotels, activities and
+                more</p>
+              <div class="search">
+                <input class="search-input" type="search" name="search" id="search"
+                  placeholder="What would you like to do?">
+                <button class="button-search">Start Planning</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="plan" class="steps">
+        <div class="steps-wrapper">
+          <h2 class="steps__header">3 Steps to the perfect trip</h2>
+          <div class="steps__list">
+            <div class="item">
+              <div class="item-img">
+                <img src="img/bicycle.svg" alt="bicycle">
+              </div>
+              <span>Tell us what you want to do</span>
+            </div>
+            <div class="item">
+              <div class="item-img">
+                <img src="img/calculator.svg" alt="calculator">
+              </div>
+              <span>Share us preferable dates</span>
+            </div>
+            <div class="item">
+              <div class="item-img">
+                <img src="img/airplane.svg" alt="airplane">
+              </div>
+              <span>We will give you recommendations</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="destinations" class="destinations">
+        <div class="destinations-wrapper">
+          <h2 class="destinations__header">Popular destinations</h2>
+          <div class="slider">
+            <figure class="slider__item-style ">
+              <img class="slider-item" srcset="img/390px/slider/spain-390px.jpg 390w, img/slider/spain.jpg 1440w"
+                sizes="(max-width: 390px) 360px, 1440px" src="img/slider/spain.jpg" alt="Spain">
+              <figcaption><span>Spain</span></figcaption>
+            </figure>
+            <figure class="slider__item-style ">
+              <img class="slider-item" srcset="img/390px/slider/japan-390px.jpg 390w, img/slider/japan.jpg 1440w"
+                sizes="(max-width: 390px) 360px, 1440px" src="img/slider/japan.jpg" alt="Japan">
+              <figcaption><span>Japan</span></figcaption>
+            </figure>
+            <figure class="slider__item-style">
+              <img class="slider-item" srcset="img/390px/slider/usa-390px.jpg 390w, img/slider/usa.jpg 1440w"
+                sizes="(max-width: 390px) 360px, 1440px" src="img/slider/usa.jpg" alt="USA">
+              <figcaption><span>USA</span></figcaption>
+            </figure>
+          </div>
+          <div class="slider-dots">
+            <span class="slider-dots__item"></span>
+            <span class="slider-dots__item"></span>
+            <span class="slider-dots__item"></span>
+          </div>
+          <div class="destinations__button">
+            <button class="button-find">
+              <img class="arrow-right" src="img/arrow-right.svg" alt="arrow-right" max-width="36px">
+              Find More
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="stories" class="stories">
+        <h2 class="stories__header">Travel stories</h2>
+        <div class="stories-bg-img">
+          <img class="background-img-bottom-mobile" src="img/390px/background-bottom-390px.jpg" alt="background_bottom">
+          <img class="background-img-bottom" src="img/background_bottom.jpg" alt="background_bottom">
+          <div class="stories-content">
+            <div class="stories__list">
+              <div class="stories__list-item">
+                <img class="list-item__img"
+                  srcset="img/390px/stories/stories-1-390px.jpg 155w, img/stories/stories-1.jpg 1440w"
+                  sizes="(max-width: 390px) 155px, 1440px" src="img/stories/stories-1.jpg" alt="stories-1">
+                <div class="list-item__topic">
+                  <p class="topic__title">10 Photos of Attractive Thailand</p>
+                  <p lang="zxx" class="topic__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem
+                    ipsum
+                    dolor sit a...
+                  </p>
+                  <span class="read-more">Read More</span>
+                </div>
+              </div>
+              <div class="stories__list-item">
+                <img class="list-item__img"
+                  srcset="img/390px/stories/stories-2-390px.jpg 155w, img/stories/stories-2.jpg 1440w"
+                  sizes="(max-width: 390px) 155px, 1440px" src="img/stories/stories-2.jpg" alt="stories-2">
+                <div class="list-item__topic">
+                  <p class="topic__title">Canyonlands National Park, Utah</p>
+                  <p lang="zxx" class="topic__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem
+                    ipsum
+                    dolor sit a...
+                  </p>
+                  <span class="read-more">Read More</span>
+                </div>
+              </div>
+              <div class="stories__list-item">
+                <img class="list-item__img"
+                  srcset="img/390px/stories/stories-3-390px.jpg 155w, img/stories/stories-3.jpg 1440w"
+                  sizes="(max-width: 390px) 155px, 1440px" src="img/stories/stories-3.jpg" alt="stories-3">
+                <div class="list-item__topic">
+                  <p class="topic__title">I left my heart in the Mountains!</p>
+                  <p lang="zxx" class="topic__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem
+                    ipsum
+                    dolor sit a...
+                  </p>
+                  <span class="read-more">Read More</span>
+                </div>
+              </div>
+              <div class="stories__list-item">
+                <img class="list-item__img"
+                  srcset="img/390px/stories/stories-4-390px.jpg 155w, img/stories/stories-4.jpg 1440w"
+                  sizes="(max-width: 390px) 155px, 1440px" src="img/stories/stories-4.jpg" alt="stories-4">
+                <div class="list-item__topic">
+                  <p class="topic__title">The Longest journey in my life!</p>
+                  <p lang="zxx" class="topic__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem
+                    ipsum
+                    dolor sit a...
+                  </p>
+                  <span class="read-more">Read More</span>
+                </div>
+              </div>
+            </div>
+            <div class="stories__button">
+              <button class="button-see">
+                <img class="arrow-right" src="img/arrow-right.svg" alt="arrow-right">
+                See More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="socialmedia" class="footer">
+      <ul class="social-media-390px">
+        <li>
+          <a href="https://rs.school/js/" target="_blank">
+            <img class="icon-rsschool" src="img/social-media/rs_school_js.svg" alt="rs_school_js.svg">
+          </a>
+        </li>
+      </ul>
+      <ul class="social-media rsschool">
+        <li>
+          <a href="https://rs.school/js/" target="_blank">
+            <img class="icon-rsschool" src="img/social-media/rs_school_js.svg" alt="rs_school_js.svg">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/VitalyRadionov" target="_blank">
+            <img class="icon-github" src="img/social-media/mark-github.svg" alt="mark-github.svg">
+          </a>
+        </li>
+      </ul>
+      <p class="footer-text">All Rights Reserved &copy; Travel Portal</p>
+      <ul class="social-media">
+        <li>
+          <a href="https://github.com/VitalyRadionov" target="_blank">
+            <img class="icon-instagram" src="img/social-media/instagram.svg" alt="icon-instagram">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/VitalyRadionov" target="_blank">
+            <img class="icon-youtube" src="img/social-media/youtube.svg" alt="icon-youtube">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/VitalyRadionov" target="_blank">
+            <img class="icon-twitter" src="img/social-media/twitter.svg" alt="icon-twitter">
+          </a>
+        </li>
+      </ul>
+      <ul class="social-media-390px">
+        <li>
+          <a href="https://github.com/VitalyRadionov" target="_blank">
+            <img class="icon-github" src="img/social-media/mark-github.svg" alt="mark-github.svg">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>
