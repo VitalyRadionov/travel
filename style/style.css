@@ -48,7 +48,7 @@ button {
   height: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0);
-  z-index: 0;
+  z-index: -1;
   transition: all 0.3s ease-in;
 }
 
@@ -69,7 +69,7 @@ button {
 
   background: #FFFFFF;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .header {
@@ -452,11 +452,11 @@ button:hover {
   flex-direction: column;
   align-items: center;
 
-  overflow: hidden;
   flex: 1 1;
 }
 
 .destinations-wrapper {
+  width: 100%;
   margin-top: 6.7%;
   display: flex;
   flex-direction: column;
@@ -465,26 +465,41 @@ button:hover {
 }
 
 .slider {
-  width: clamp(1110px, 175vw, 2520px);
+  width: 100%;
 
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
-  margin: 1.8% 0 1% 0;
+  margin: 3.15% 0 1% 0;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+
+  transition: all 2s;
 }
 
 .slider__item-style {
-  width: 100%;
+  width: clamp(360px, 56vw, 800px);
   height: 100%;
+  margin: 0 clamp(7.5px, 5vw, 30px);
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+
+  position: relative;
 }
 
-.slider__item-style:nth-child(2) {
-  margin: 0 clamp(15px, 5vw, 60px);
+.slider__item-style.previous,
+.slider__item-style.next {
+  cursor: pointer;
 }
 
 .slider__item-style>figcaption {
@@ -508,6 +523,7 @@ button:hover {
 
 .slider-item {
   width: 100%;
+  height: 100%;
   border-radius: 16px;
 }
 
@@ -530,7 +546,7 @@ button:hover {
   background: rgba(242, 120, 92, 0.5);
 }
 
-.slider-dots__item:nth-child(2) {
+.slider-dots__item.active {
   background: rgba(242, 120, 92, 1);
 }
 
@@ -781,6 +797,15 @@ button:hover {
 }
 
 @media (max-width: 1340px) {
+
+  .slider__item-style {
+    width: max(360px, 50vw);
+  }
+
+  .slider-item {
+    border-radius: 16px;
+  }
+
   .stories__list {
     margin: min(40px, 2.9%) min(125px, 3vw) 0 min(119px, 3vw);
   }
@@ -1150,7 +1175,7 @@ button:hover {
     border-radius: 16px;
   }
 
-  .slider__item-style:nth-child(2) {
+  .slider__item-style:not(:first-child, :last-child) {
     margin: 0 15px;
   }
 
